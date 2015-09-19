@@ -1,0 +1,14 @@
+{
+    "name": "nodecg-dashboard",
+    "version": "0.0.1",
+    "nodecgDependency": "0.6.1",
+    "description": "Dashboard showing viewers, followers, uptime, and stream title",
+    "authors": [
+        "Elliot DeNolf"
+    ],
+    "homepage": "",
+    "license": "",
+    "extension": {
+        "path": "extension.js"
+    }
+}

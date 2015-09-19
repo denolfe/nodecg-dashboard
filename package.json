@@ -1,0 +1,6 @@
+{
+  "name": "nodecg-dashboard",
+  "dependencies": {
+    "request": "^2.61.0"
+  }
+}

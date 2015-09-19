@@ -1,0 +1,38 @@
+.nodecg-dashboard #stats {
+  float: left;
+  margin-right: 10px;
+  padding-left: 12px;
+  width: 100%;
+}
+.nodecg-dashboard #stats svg {
+  float: left;
+  margin: 10px 2px 7px 0;
+}
+.nodecg-dashboard #stats span {
+  position: relative;
+}
+.nodecg-dashboard #stats small {
+  margin: 2px;
+}
+.nodecg-dashboard #stats .stat {
+  float: left;
+  margin: 6px 15px 0 0;
+}
+.nodecg-dashboard #stats #icon-viewers {
+  fill: red;
+}
+.nodecg-dashboard #stats #viewers {
+  float: left;
+}
+.nodecg-dashboard #stats #uptime-ticker {
+  font-weight: 700;
+}
+.nodecg-dashboard #stream-title {
+  color: darkgray;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+.nodecg-dashboard .well {
+  padding: 8px !important;
+}

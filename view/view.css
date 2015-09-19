@@ -1,0 +1,49 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  background: none;
+  background-size: 1920px 1080px;
+  background-repeat: no-repeat;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+#container {
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+  font-size: 18px;
+}
+#stats {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  text-align: right;
+  padding: 4px;
+  color: white;
+}
+#stats span {
+  margin-left: 4px;
+}
+#stats svg {
+  margin-bottom: -4px;
+}
+#viewers {
+  float: left;
+  width: 80px;
+  text-align: left;
+}
+#followers {
+  float: left;
+  width: 115px;
+  text-align: left;
+  padding-left: 18px;
+}
+#icon-viewers,
+#icon-followers {
+  fill: red;
+}
+#viewer-count {
+  padding-bottom: 3px;
+}
