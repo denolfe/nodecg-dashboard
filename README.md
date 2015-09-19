@@ -1,4 +1,4 @@
-# Project Name
+# NodeCG Dashboard
 
 [NodeCG](http://nodecg.com/) bundle showing viewers, followers, uptime, and stream title.
 
