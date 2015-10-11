@@ -20,7 +20,8 @@ module.exports = function (nodecg) {
 
   function getViewers() {
     var url = 'https://api.twitch.tv/kraken/streams/' + username;
-    request(url, function (error, response, body) {
+    try {
+      request(url, function (error, response, body) {
         if (!error && response.statusCode === 200) {
           var data = JSON.parse(body);
           if (data.stream === null) {
@@ -34,7 +35,10 @@ module.exports = function (nodecg) {
           console.log(error);
           console.log(response.statusCode);
         }
-    });
+      });
+    } catch (e) {
+      nodecg.log.error(e);
+    }
   }
 
   function getFollowers() {
