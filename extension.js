@@ -40,7 +40,7 @@ module.exports = function (nodecg) {
   function getFollowers() {
     var url = 'https://api.twitch.tv/kraken/channels/' + username;
     request(url, function (error, response, body) {
-      if (!error && response.statusCode === 200) {
+      if (response !== undefined && !error && response.statusCode === 200) {
         var data = JSON.parse(body);
         twitchTitle.value = data.status;
         twitchFollowers.value = data.followers;
