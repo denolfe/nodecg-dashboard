@@ -1,6 +1,33 @@
 {
-  "name": "nodecg-dashboard",
-  "dependencies": {
-    "request": "^2.61.0"
-  }
+    "name": "nodecg-dashboard",
+    "version": "0.0.1",
+    "description": "Dashboard showing viewers, followers, uptime, and stream title",
+    "authors": [
+        "Elliot DeNolf"
+    ],
+    "homepage": "",
+    "license": "",
+    "extension": {
+        "path": "extension.js"
+    },
+    "dependencies": {
+        "request": "^2.61.0"
+    },
+    "nodecg": {
+        "compatibleRange": "~0.7.0",
+        "dashboardPanels": [{
+            "headerColor": "#564573",
+            "name": "nodecg-twitch-dashboard",
+            "title": "Twitch Dash",
+            "width": 2,
+            "file": "panel.html",
+            "faIcon": "fa-twitch"
+        }],
+        "graphics": [{
+            "file": "index.html",
+            "width": 1280,
+            "height": 720,
+            "singleInstance": false
+        }]
+    }
 }

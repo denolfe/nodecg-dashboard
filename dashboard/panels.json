@@ -1,9 +1,0 @@
-[
-  {
-    "name": "nodecg-twitch-dashboard",
-    "title": "Twitch Dash",
-    "width": 2,
-    "file": "panel.html",
-    "faIcon": "fa-twitch"
-  }
-]
