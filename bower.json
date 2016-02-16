@@ -1,0 +1,6 @@
+{
+  "name": "nodecg-dashboard",
+  "dependencies": {
+    "jquery": "components/jquery"
+  }
+}
