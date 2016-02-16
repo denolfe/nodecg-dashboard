@@ -1,0 +1,18 @@
+{
+  "properties": {
+    "twitchUsername": {
+      "type": "string"
+    },
+    "updateViewerInterval": {
+      "description": "Defaults to 15 seconds if not populated",
+      "type": "integer",
+      "minimum": 5
+    },
+    "updateFollowerInterval": {
+      "description": "Defaults to 2 minutes if not populated",
+      "type": "integer",
+      "minimum": 5
+    }
+  },
+  "required": ["twitchUsername"]
+}
