@@ -5,7 +5,7 @@ var request = require('request');
 function Dashboard (nodecg) {
 
   var updateViewerInterval = nodecg.bundleConfig.updateViewerInterval === undefined ? 15 : nodecg.bundleConfig.updateViewerInterval;
-  var updateFollowerInterval = nodecg.bundleConfig.updateFollowerInterval === undefined ? 120 : nodecg.bundleConfig.updateFollowerInterval;
+  var updateFollowerInterval = nodecg.bundleConfig.updateFollowerInterval === undefined ? 15 : nodecg.bundleConfig.updateFollowerInterval;
   var username = nodecg.bundleConfig.twitchUsername;
   var twitchViewers = nodecg.Replicant('twitchViewers', { persistent: false });
   var twitchFollowers = nodecg.Replicant('twitchFollowers');

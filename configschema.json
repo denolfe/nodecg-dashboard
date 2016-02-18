@@ -1,16 +1,21 @@
 {
+  "type": "object",
   "properties": {
     "twitchUsername": {
-      "type": "string"
+      "description": "Twitch.tv username",
+      "type": "string",
+      "default": ""
     },
     "updateViewerInterval": {
-      "description": "Defaults to 15 seconds if not populated",
+      "description": "Interval to update viewer count (seconds)",
       "type": "integer",
+      "default": 15,
       "minimum": 5
     },
     "updateFollowerInterval": {
-      "description": "Defaults to 2 minutes if not populated",
+      "description": "Interval to update followers (seconds)",
       "type": "integer",
+      "default": 15,
       "minimum": 5
     }
   },
