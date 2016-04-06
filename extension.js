@@ -34,7 +34,7 @@ function Dashboard (nodecg) {
           }
         } else {
           console.log(error);
-          console.log(response.statusCode);
+          if (response) console.log(response.statusCode);
         }
       });
     } catch (e) {
