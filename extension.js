@@ -27,6 +27,8 @@ function Dashboard (nodecg) {
           var data = JSON.parse(body);
           if (data.stream === null) {
             twitchStreaming.value = false;
+            twitchViewers.value = false;
+            twitchStarted.value = false;
           } else {
             twitchStreaming.value = true;
             twitchViewers.value = data.stream.viewers;

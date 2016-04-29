@@ -10,7 +10,7 @@ $(document).ready(function () {
   $('.nodecg-dashboard .panel-title').text(nodecg.bundleConfig.twitchUsername);
 
   twitchViewers.on('change', function(oldValue, newValue) {
-    if (newValue === undefined) {
+    if (newValue === false) {
       $('#viewers').html('<small><i>Offline</i></small>');
       return
     }
@@ -29,8 +29,12 @@ $(document).ready(function () {
   })
 
   twitchStarted.on('change', function(oldValue, newValue) {
-    if (newValue === undefined) {
-      $('#uptime-ticker').html('00:00:00')
+    if (newValue === false) {
+      if (uptimeTickerStarted === true) {
+        $('#uptime-ticker').stopwatch('stop');
+        $('#uptime-ticker').html('00:00:00');
+        uptimeTickerStarted = false;
+      }
       return
     }
     console.log('twitchStarted changed from '+JSON.stringify(oldValue) +' to '+ JSON.stringify(newValue));
