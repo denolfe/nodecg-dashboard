@@ -51,7 +51,7 @@ function Dashboard (nodecg) {
         twitchFollowers.value = data.followers;
       } else {
         console.log(error);
-        console.log(response.statusCode);
+        if (response) console.log(response.statusCode);
       }
     });
   } 
